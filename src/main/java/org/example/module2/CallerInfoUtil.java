@@ -9,6 +9,6 @@ public class CallerInfoUtil {
         return new CallingInfo(caller.getClassName(), caller.getMethodName(), caller.getLineNumber());
     }
 
-    public static record CallingInfo(String className, String methodName, int lineNumber) {
+    public record CallingInfo(String className, String methodName, int lineNumber) {
     }
 }
